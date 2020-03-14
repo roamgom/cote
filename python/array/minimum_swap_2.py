@@ -12,6 +12,16 @@ import sys
 
 # Complete the minimumSwaps function below.
 def minimumSwaps(arr):
+    """
+    숫자는 무조건 순차적인 조합으로 주어진다
+    숫자의 위치를 나타내는 dict를 하나 생성하여 저장하고
+    원래 해당 숫자에 맞는 위치 (i)를 숫자값과 비교하여(i+1)
+    같은 위치가 아닐 경우, dict 값을 참고하여 작은 숫자부터 교환하여 자리르 맞추며
+    count를 증가시켜 return
+    :param arr: unsorted 배열
+    :return:
+    """
+
     temp_array = {value: index for index, value in enumerate(arr)}
     swap_count = 0
 
