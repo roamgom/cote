@@ -15,13 +15,17 @@ class Player:
     def comparator(a, b):
         # check alphabetical & numeric compare on each name, score
         if a.score < b.score:
+            # change
             return 1
         elif a.score > b.score:
+            # don't change
             return -1
         elif a.score == b.score:
             if a.name < b.name:
+                # don't change
                 return -1
             elif a.name > b.name:
+                # change
                 return 1
             else:
                 return 0
